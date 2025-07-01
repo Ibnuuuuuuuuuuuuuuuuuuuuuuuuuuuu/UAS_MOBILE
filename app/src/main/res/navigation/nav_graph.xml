@@ -37,4 +37,9 @@
             android:name="coffee"
             app:argType="com.example.kopipedia.domain.model.Coffee" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.kopipedia.presentation.ui.AboutFragment"
+        android:label="Tentang"
+        tools:layout="@layout/fragment_about" />
 </navigation>

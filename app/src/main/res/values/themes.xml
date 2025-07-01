@@ -1,8 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.KopiPedia" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/coffee_primary</item> <item name="colorOnPrimary">@color/coffee_on_primary</item> <item name="colorPrimaryContainer">@color/coffee_secondary</item> <item name="colorOnPrimaryContainer">@color/coffee_on_primary</item>
+
+        <item name="colorSecondary">@color/coffee_secondary</item> <item name="colorOnSecondary">@color/coffee_on_secondary</item> <item name="colorSecondaryContainer">@color/coffee_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/coffee_on_secondary</item>
+
+        <item name="colorTertiary">@color/coffee_primary</item>
+        <item name="colorOnTertiary">@color/coffee_on_primary</item>
+        <item name="colorTertiaryContainer">@color/coffee_secondary</item>
+        <item name="colorOnTertiaryContainer">@color/coffee_on_primary</item>
+
+        <item name="colorError">@color/coffee_error</item>
+        <item name="colorOnError">@color/coffee_on_error</item>
+
+        <item name="android:colorBackground">@color/coffee_background_light</item> <item name="colorOnBackground">@color/coffee_on_background_dark</item> <item name="colorSurface">@color/coffee_surface_light</item> <item name="colorOnSurface">@color/coffee_on_surface_dark</item> <item name="colorSurfaceVariant">@color/coffee_secondary</item> <item name="colorOnSurfaceVariant">@color/coffee_on_primary</item>
+
+        <item name="colorOutline">@color/coffee_outline</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.KopiPedia.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/coffee_background_light</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_coffee_maker</item>
+        <item name="postSplashScreenTheme">@style/Theme.KopiPedia</item>
+
+        <item name="android:statusBarColor">@color/coffee_primary</item>
+        <item name="android:navigationBarColor">@color/coffee_primary</item>
     </style>
 
     <style name="Theme.KopiPedia" parent="Base.Theme.KopiPedia" />

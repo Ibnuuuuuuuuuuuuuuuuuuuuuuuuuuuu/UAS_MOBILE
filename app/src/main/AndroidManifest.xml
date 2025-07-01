@@ -15,14 +15,18 @@
         android:theme="@style/Theme.KopiPedia"
         tools:targetApi="31">
 
-        <!-- DEKLARASI ACTIVITY YANG BENAR -->
+        <activity
+            android:name=".presentation.ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KopiPedia.Splash"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".presentation.ui.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
     </application>

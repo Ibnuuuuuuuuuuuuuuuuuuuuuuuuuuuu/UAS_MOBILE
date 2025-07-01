@@ -77,6 +77,8 @@ android {
         // Glide (untuk memuat gambar dari URL)
         implementation(libs.glide)
 
+        implementation("androidx.core:core-splashscreen:1.0.1")
+
         // Testing (Bawaan)
         testImplementation(libs.junit)
         androidTestImplementation(libs.androidx.junit)

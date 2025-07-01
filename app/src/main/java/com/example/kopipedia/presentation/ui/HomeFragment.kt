@@ -17,6 +17,7 @@ import com.example.kopipedia.presentation.viewmodel.CoffeeViewModel
 import com.example.kopipedia.presentation.viewmodel.ViewModelFactory
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import android.util.Log
 
 class HomeFragment : Fragment() {
 
@@ -58,13 +59,16 @@ class HomeFragment : Fragment() {
     }
 
     private fun observeViewModel() {
-        // Menggunakan lifecycleScope untuk observasi yang aman
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.coffees.collectLatest { result ->
                 binding.progressBar.isVisible = result is ResultState.Loading
                 binding.tvError.isVisible = result is ResultState.Error
 
                 if (result is ResultState.Success) {
+                    Log.d("HomeFragmentDebug", "List received (Size: ${result.data.size}):")
+                    result.data.forEachIndexed { index, coffee ->
+                        Log.d("HomeFragmentDebug", "  $index: ${coffee.title} (ID: ${coffee.id})")
+                    }
                     coffeeAdapter.submitList(result.data)
                 }
             }

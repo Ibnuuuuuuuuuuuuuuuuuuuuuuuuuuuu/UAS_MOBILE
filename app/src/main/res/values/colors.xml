@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-</resources>
+
+    <color name="coffee_primary">#5C4033</color>
+    <color name="coffee_on_primary">#FFF8E1</color>
+    <color name="coffee_secondary">#795548</color>
+    <color name="coffee_on_secondary">#FFF8E1</color>
+    <color name="coffee_background_light">#FFF8E1</color>
+    <color name="coffee_on_background_dark">#212121</color>
+    <color name="coffee_surface_light">#FFF8E1</color>
+    <color name="coffee_on_surface_dark">#212121</color>
+    <color name="coffee_background_dark">#1A1A1A</color>
+    <color name="coffee_on_background_light">#FFF8E1</color>
+    <color name="coffee_surface_dark">#2C2C2C</color>
+    <color name="coffee_on_surface_light">#FFF8E1</color>
+    <color name="coffee_error">#B00020</color>
+    <color name="coffee_on_error">#FFFFFF</color>
+    <color name="coffee_outline">#795548</color> </resources>
